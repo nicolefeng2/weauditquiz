@@ -39,10 +39,12 @@
 .landing-base .how-biased-is-AI {
   font-size: 50px;
   font-weight: bold;
+  font-family: "Roboto";
 }
   
 .landing-base .take-quiz {
   font-size: 30px;
+  font-family: "Roboto";
 }
 
 .landing-base .what-is-bias-container {
@@ -53,6 +55,7 @@
 }
 
 .landing-base .what-is-bias-text {
+  font-family: "Roboto";
   font-size: 30px;
   font-weight: bold;
   font-style: italic;
@@ -86,6 +89,7 @@
 .generic-bias-text{
   font-size: 24px;
   font-weight: bold;
+  font-family: "Roboto";
 }
 
 .landing-base .generic-bias-definition-container {
@@ -137,6 +141,7 @@
   color: #107250;
   font-size: 24px;
   text-decoration: underline;
+  font-family: "Roboto";
 }
   
 .start-box {
@@ -155,6 +160,7 @@
   color: #ffffff;
   font-size: 24px;
   padding-right: 10px;
+  font-family: "Roboto";
 }
   
 .arrow {

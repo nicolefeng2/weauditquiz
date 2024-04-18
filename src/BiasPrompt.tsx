@@ -2,8 +2,8 @@ import "./BiasPrompt.css";
 import Rating from './Rating'
 import FreeResponse from './FreeResponse'
 
-import React, { useState, useEffect } from 'react';
-import { useNavigate, useParams } from 'react-router-dom';
+import { useState, useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
 
 import whiteArrow from './assets/white_arrow.svg'
 import baby from './assets/prompts/baby.png';
@@ -52,9 +52,9 @@ function BiasPrompt({ prompt, onSubmit}: BiasPromptProps) {
     // Sets the current step on Flower page
     const [step, setStep] = useState('rating');
     // store rating value
-    const [ratingAnswer, setRatingAnswer] = useState<number | null>(null);
+    // const [setRatingAnswer] = useState<number | null>(null);
     // store free response value
-    const [freeResponseAnswer, setFreeResponseAnswer] = useState<string>('');
+    // const [setFreeResponseAnswer] = useState<string>('');
     // initialize useNavigate
     const navigate = useNavigate();
     // setting the flow from Rating to FreeResponse
@@ -67,12 +67,12 @@ function BiasPrompt({ prompt, onSubmit}: BiasPromptProps) {
       }
     }
 
-    const handleSubmitRating = (value: number) => {
-      setRatingAnswer(value);
+    const handleSubmitRating = () => {
+    //   setRatingAnswer(value);
     }
 
-    const handleSubmitFreeResponse = (value: string) => {
-      setFreeResponseAnswer(value);
+    const handleSubmitFreeResponse = () => {
+    //   setFreeResponseAnswer(value);
     };
 
     return (

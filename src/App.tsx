@@ -9,11 +9,10 @@ import Result from './Result'
 
 
 function App() {
-  const [submit, setSubmit] = useState(false);
-  let currPage:string = "landing";
+  // const [submit, setSubmit] = useState(false);
 
   const handleSubmit = () => {
-    setSubmit(true);
+    // setSubmit(true);
   };
 
   return (

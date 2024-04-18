@@ -1,8 +1,8 @@
 import "./BiasDistribution.css";
 import Box from './Box'
 
-import React, { useState, useEffect } from 'react';
-import { useNavigate, useParams } from 'react-router-dom';
+import { useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
 
 // EDIT POINT: When adding a new prompt, make sure to add import for "{promp}_distr" image
 import baby_distr from './assets/distributions/baby_distr.png';
@@ -84,7 +84,6 @@ function DistrBody({ distr, button }: BiasDistributionProps){
 
   const { 
     prompt,
-    picture,
     topLeftBox: {
       color: topLeftColor,
       labelColor: topLeftLabelColor,

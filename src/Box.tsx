@@ -1,6 +1,5 @@
 import "./Box.css";
-import React, { useState, useEffect } from 'react';
-import { useNavigate, useParams } from 'react-router-dom';
+import React from 'react';
 import manIcon from './assets/man_icon.png'
 
 interface BoxProps {

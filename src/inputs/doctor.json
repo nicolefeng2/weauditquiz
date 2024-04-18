@@ -1,6 +1,5 @@
 {
     "prompt": "Doctor",
-    "picture": "doctor_distr",
     "topLeftBox":{
       "color": "orange",
       "labelColor": "darkOrange",

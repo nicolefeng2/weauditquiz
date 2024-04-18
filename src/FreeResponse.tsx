@@ -1,6 +1,5 @@
 import "./FreeResponse.css";
-import React, { useState, useEffect } from 'react';
-import { useNavigate, useParams } from 'react-router-dom';
+import { useState } from 'react';
 
 interface FreeResponseProps {
   onSubmit: (value: string) => void;

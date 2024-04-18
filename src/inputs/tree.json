@@ -1,6 +1,5 @@
 {
     "prompt": "Trees",
-    "picture": "tree_distr",
     "topLeftBox":{
       "color": "green",
       "labelColor": "darkGreen",

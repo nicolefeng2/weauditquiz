@@ -1,6 +1,5 @@
 import "./BiasDistribution.css";
 import "./Result.css";
-import {BiasDistribution} from './BiasDistribution'
 import {DistrBody} from './BiasDistribution'
 import whiteArrow from './assets/white_arrow.svg'
 import { useNavigate } from "react-router-dom";

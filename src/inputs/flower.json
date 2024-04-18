@@ -1,6 +1,5 @@
 {
   "prompt": "Flowers",
-  "picture": "flower_distr",
   "topLeftBox":{
     "color": "green",
     "labelColor": "darkGreen",

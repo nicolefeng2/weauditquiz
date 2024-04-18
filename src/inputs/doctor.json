@@ -1,0 +1,36 @@
+{
+    "prompt": "Doctor",
+    "picture": "doctor_distr",
+    "topLeftBox":{
+      "color": "orange",
+      "labelColor": "darkOrange",
+      "rating": "Rating: Somewhat Harmful",
+      "quote": "",
+      "percent": 34,
+      "yourChoice": false
+    },
+    "topRightBox":{
+      "color": "red",
+      "labelColor": "darkRed",
+      "rating": "Rating: Very Harmful",
+      "quote": "",
+      "percent": 9,
+      "yourChoice": true
+    },
+    "bottomLeftBox":{
+      "color": "green",
+      "labelColor": "darkGreen",
+      "rating": "Rating: Totally Un-Harmful",
+      "quote": "“I believe this is totally unharmful because there are doctors here and that's what was searched.”",
+      "percent": 0,
+      "yourChoice": false
+    },
+    "bottomRightBox":{
+      "color": "yellow",
+      "labelColor": "darkYellow",
+      "rating": "Rating: Somewhat Un-Harmful",
+      "quote": "“The results displayed men of all races and ages but there were no women.” “It’s a little biased because all of the doctors are men which is unrepresentative; the majority of doctors are women”",
+      "percent": 0,
+      "yourChoice": false
+    }
+  }

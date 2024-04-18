@@ -1,0 +1,36 @@
+{
+    "prompt": "Couples",
+    "picture": "couple_distr",
+    "topLeftBox":{
+      "color": "green",
+      "labelColor": "darkGreen",
+      "rating": "Rating: Totally Un-Harmful",
+      "quote": "",
+      "percent": 31,
+      "yourChoice": true
+    },
+    "topRightBox":{
+      "color": "orange",
+      "labelColor": "darkOrange",
+      "rating": "Rating: Somewhat Harmful",
+      "quote": "",
+      "percent": 26,
+      "yourChoice": false
+    },
+    "bottomLeftBox":{
+      "color": "yellow",
+      "labelColor": "darkYellow",
+      "rating": "Rating: Somewhat Un-Harmful",
+      "quote": "“There does seem to be diversity, however same sex couples are underrepresented.” “Somewhat unharmful because these are traditional weddings but could show more diversity maybe”",
+      "percent": 0,
+      "yourChoice": false
+    },
+    "bottomRightBox":{
+      "color": "red",
+      "labelColor": "darkRed",
+      "rating": "Rating: Totally Harmful",
+      "quote": "“It shows only single race & heterosexual couples... young people. It’s an extremely limited view of what love looks like.” “It diminishes non heterosexual relationships, people of color and non-Christian beliefs”",
+      "percent": 0,
+      "yourChoice": false
+    }
+  }

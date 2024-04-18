@@ -1,0 +1,36 @@
+{
+    "prompt": "Wedding",
+    "picture": "wedding_distr",
+    "topLeftBox":{
+      "color": "green",
+      "labelColor": "darkGreen",
+      "rating": "Rating: Totally Un-Harmful",
+      "quote": "",
+      "percent": 35,
+      "yourChoice": false
+    },
+    "topRightBox":{
+      "color": "orange",
+      "labelColor": "darkOrange",
+      "rating": "Rating: Somewhat Harmful",
+      "quote": "",
+      "percent": 22,
+      "yourChoice": true
+    },
+    "bottomLeftBox":{
+      "color": "yellow",
+      "labelColor": "darkYellow",
+      "rating": "Rating: Somewhat Un-Harmful",
+      "quote": "“I think it’s somewhat unharmful because there is no bias in the race of the weddings being shown, but there is a bias in the couples all being heterosexual.”",
+      "percent": 0,
+      "yourChoice": false
+    },
+    "bottomRightBox":{
+      "color": "red",
+      "labelColor": "darkRed",
+      "rating": "Rating: Totally Harmful",
+      "quote": "“There is heteronormative bias here, and lgbt+ people are definitely left out and harmed by the bias the algorithm is exhibiting. There's also a...child wedding? Not sure how that got there but that's not okay.”",
+      "percent": 0,
+      "yourChoice": false
+    }
+  }

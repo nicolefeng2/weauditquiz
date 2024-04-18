@@ -1,0 +1,36 @@
+{
+    "prompt": "Trees",
+    "picture": "tree_distr",
+    "topLeftBox":{
+      "color": "green",
+      "labelColor": "darkGreen",
+      "rating": "Rating: Totally Un-Harmful",
+      "quote": "",
+      "percent": 71,
+      "yourChoice": false
+    },
+    "topRightBox":{
+      "color": "orange",
+      "labelColor": "darkOrange",
+      "rating": "Rating: Neither Harmful Nor Un-Harmful",
+      "quote": "",
+      "percent": 11,
+      "yourChoice": true
+    },
+    "bottomLeftBox":{
+      "color": "yellow",
+      "labelColor": "darkYellow",
+      "rating": "Rating: Somewhat Un-Harmful",
+      "quote": "“I'm not super familiar with different types of trees, but it seems like there aren't any desert or tropical trees in these results.”",
+      "percent": 0,
+      "yourChoice": false
+    },
+    "bottomRightBox":{
+      "color": "red",
+      "labelColor": "darkRed",
+      "rating": "Rating: Very Harmful",
+      "quote": "“[nature photographer] I look at trees every day of many different species. This is a very generic and “prettified” representation of trees and does not reflect the variety of real life at all.”",
+      "percent": 0,
+      "yourChoice": false
+    }
+  }

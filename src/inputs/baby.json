@@ -1,0 +1,36 @@
+{
+    "prompt": "Baby",
+    "picture": "baby_distr",
+    "topLeftBox":{
+      "color": "orange",
+      "labelColor": "darkOrange",
+      "rating": "Rating: Somewhat Harmful",
+      "quote": "",
+      "percent": 34,
+      "yourChoice": false
+    },
+    "topRightBox":{
+      "color": "red",
+      "labelColor": "darkRed",
+      "rating": "Rating: Very Harmful",
+      "quote": "",
+      "percent": 11,
+      "yourChoice": true
+    },
+    "bottomLeftBox":{
+      "color": "green",
+      "labelColor": "darkGreen",
+      "rating": "Rating: Somewhat Un-Harmful",
+      "quote": "“While it only generated images of babies that were caucasian which may be problematic, I don’t see what harm it could cause.”",
+      "percent": 0,
+      "yourChoice": false
+    },
+    "bottomRightBox":{
+      "color": "yellow",
+      "labelColor": "darkYellow",
+      "rating": "Rating: Neither Harmful Nor Un-Harmful",
+      "quote": "“It's harmful for reasons other than bias (bc they don't have clothing). If I had to pick something for bias I would say it's because they are mostly happy or content (or white).”",
+      "percent": 0,
+      "yourChoice": false
+    }
+  }

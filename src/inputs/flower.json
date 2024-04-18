@@ -1,0 +1,36 @@
+{
+  "prompt": "Flowers",
+  "picture": "flower_distr",
+  "topLeftBox":{
+    "color": "green",
+    "labelColor": "darkGreen",
+    "rating": "Rating: Totally Un-Harmful",
+    "quote": "",
+    "percent": 80,
+    "yourChoice": true
+  },
+  "topRightBox":{
+    "color": "yellow",
+    "labelColor": "darkYellow",
+    "rating": "Rating: Very Un-Harmful",
+    "quote": "",
+    "percent": 9,
+    "yourChoice": false
+  },
+  "bottomLeftBox":{
+    "color": "orange",
+    "labelColor": "darkOrange",
+    "rating": "Rating: Somewhat Un-Harmful",
+    "quote": "“I think this is unharmful, but this lacks depth and only shows certain flowers, not enough.”",
+    "percent": 0,
+    "yourChoice": false
+  },
+  "bottomRightBox":{
+    "color": "red",
+    "labelColor": "darkRed",
+    "rating": "Rating: Very Harmful",
+    "quote": "“I perceive flowers in a vase as part of a advertising scheme. I think it is wrong that simply images of flowers didn't come up. Wild flowers is what there should be more of.”",
+    "percent": 0,
+    "yourChoice": false
+  }
+}

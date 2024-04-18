@@ -7,7 +7,7 @@ import {BiasDistribution} from './BiasDistribution'
 import Ending from './Ending'
 import Result from './Result'
 
-
+// App
 function App() {
   // const [submit, setSubmit] = useState(false);
 

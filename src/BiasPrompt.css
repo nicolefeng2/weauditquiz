@@ -1,0 +1,127 @@
+ .bias-prompt-base {
+    background-color: white;
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    font-family: "Roboto";
+    transform: scale(0.55);
+    transform-origin: top;
+    padding-bottom: 10%;
+  }
+  
+  .bias-prompt-base .how-biased-is-ai {
+    color: black;
+    font-family: "Roboto-Italic", Helvetica;
+    font-size: 30px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: normal;
+    width: 22vw;
+    padding-left: 2vw;
+  }
+  
+  .bias-prompt-base .body-container {
+    margin: 5% 5% 5% 5%;
+  }
+
+  .bias-prompt-base .AI-prompt-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .bias-prompt-base .AI-prompt-box {
+    background-color: #caf8c9;
+    border-radius: 5px;
+    box-shadow: 0px 4px 4px #00000040;
+    height: 114px;
+    position: relative;
+    width: 605px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .bias-prompt-base .AI-prompt-text {
+    color: #000000;
+    font-family: "Roboto-Regular", Helvetica;
+    font-size: 60px;
+    font-weight: 400;
+    letter-spacing: 0;
+    line-height: normal;
+    text-align: center;
+  }
+  
+  .bias-prompt-base .text-regular {
+    color: black;
+    font-family: "Roboto-Regular", Helvetica;
+    font-size: 60px;
+    font-weight: 400;
+  }
+
+  .text-bold{
+    font-weight: bold;
+  }
+
+  #prompt-title {
+    color: black;
+    font-family: "Roboto-Bold", Helvetica;
+    font-size: 60px;
+    font-weight: 700;
+  }
+  
+  .pictures{
+    padding-top: 5vh;
+    width: 100%;
+    max-width: 100%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .picture-img{
+    width: 100%;
+    height: auto;
+  }
+
+  .disclaimer{
+    font-size: 30px;
+    font-style: italic;
+    text-align: center;
+  }
+  
+  .bias-prompt-base .submit-container {
+    display: flex;
+    margin: 5% 5% 5% 5%;
+    justify-content: right;
+    align-items: center;
+    padding-bottom: 5%;
+  }
+  
+  .bias-prompt-base .submit-box{
+    background-color: #43a32a;
+    border-radius: 100px;
+    box-shadow: 0px 4px 4px #00000040;
+    position: relative;
+    width: 350px;
+    height: 121px;
+    display: flex;
+    align-items: center;
+    border: none;
+  }
+  
+  .bias-prompt-base .submit-text {
+    color: #ffffff;
+    font-family: "Roboto-Regular", Helvetica;
+    font-size: 40px;
+    font-weight: 400;
+    text-align: center;
+    padding-left: 60px;
+    padding-right: 20px;
+  }
+  
+  .bias-prompt-base .arrow {
+    width: 60px;
+    height: auto;
+  }

@@ -1,0 +1,163 @@
+.landing-base {
+  background-color: white;
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  font-family: "Roboto";
+  font-size: 20px;
+  font-weight: 400;
+  color: black;
+  padding-bottom: 10%;
+}
+.landing-base .text-underline{
+  text-decoration: underline;
+}
+
+.landing-base .text-italic {
+  font-style: italic;
+}
+
+.landing-base .text-underline-italic {
+  font-style: italic;
+  text-decoration: underline;
+}
+
+.landing-base .banner {
+  background-image:url('./assets/banner_pic.png');
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 2%;
+  padding-bottom:2%;
+}
+
+.landing-base .landing-header{
+  line-height: 0.1;
+}
+  
+.landing-base .how-biased-is-AI {
+  font-size: 50px;
+  font-weight: bold;
+}
+  
+.landing-base .take-quiz {
+  font-size: 30px;
+}
+
+.landing-base .what-is-bias-container {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.landing-base .what-is-bias-text {
+  font-size: 30px;
+  font-weight: bold;
+  font-style: italic;
+  text-align: center;
+}
+
+.landing-base .bias-highlight{
+  background-color: #FFE5A0;
+  text-decoration: underline;
+  padding: 10px 10px 10px 10px;
+}
+
+.landing-base .body-container {
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
+.landing-base .generic-bias-container {
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.landing-base .generic-bias-text-container{
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  width: 27%;
+}
+
+.generic-bias-text{
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.landing-base .generic-bias-definition-container {
+  width: 70%;
+  padding-left: 60px;
+  padding-right: 30px;
+}
+
+#gender-bias-highlight{
+  background-color: #c4e2ff;
+  padding: 10px 10px 10px 10px;
+  font-weight: 700;
+}
+
+#racial-bias-highlight{
+  background-color: #f6c4ff;
+  padding: 10px 10px 10px 10px;
+  font-weight: 700;
+}
+
+#sexual-bias-highlight{
+  background-color: #FFC5C5;
+  padding: 10px 10px 10px 10px;
+  font-weight: 700;
+}
+
+
+.landing-base .bottom-bar{
+  display: flex;
+  margin-left: 20%;
+  margin-right: 20%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.landing-base .learn-more-box {
+  background-color: #f0f0f0;
+  border-radius: 20px;
+  box-shadow: 0px 4px 4px #00000040;
+  position: relative;
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  border: none;
+  padding: 20px 20px 20px 20px;
+}
+  
+.landing-base .learn-more-text {
+  color: #107250;
+  font-size: 24px;
+  text-decoration: underline;
+}
+  
+.start-box {
+  background-color: #43a32a;
+  border-radius: 100px;
+  box-shadow: 0px 4px 4px #00000040;
+  position: relative;
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  border: none;
+  padding: 20px 20px 20px 20px;
+}
+  
+.landing-base .start-text {
+  color: #ffffff;
+  font-size: 24px;
+  padding-right: 10px;
+}
+  
+.arrow {
+  width: 30px;
+  height: auto;
+}

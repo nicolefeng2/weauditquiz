@@ -1,0 +1,89 @@
+.rating-container {
+    justify-content: center;
+    align-items: center;
+    padding-top: 5vh;
+  }
+
+  .circle-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .circle {
+    display: inline-block;
+    border-radius: 50%;
+    margin-right: 10px;
+    cursor: pointer;
+    position: relative;
+    margin: 0 70px;
+    border: 2px solid;
+    border-color: black;
+  }
+
+  .circle::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    height: 90%;
+    border-radius: 50%;
+  }
+  
+  .circle.selected::after {
+    background-color: rgb(60, 60, 60);
+  }
+  
+  .circle:nth-child(1) {
+    background-color: #ffffff;
+    border-radius: 50px;
+    height: 100px;
+    width: 100px;
+  }
+  
+  .circle:nth-child(2) {
+    background-color: #ffe6d0;
+    border-radius: 37.5px;
+    height: 75px;
+    width: 75px;
+    
+  }
+  
+  .circle:nth-child(3) {
+    background-color: #ffc48f;
+    border-radius: 25px;
+    height: 50px;
+    width: 50px;
+  }
+
+  .circle:nth-child(4){
+    background-color: #f29b4b;
+    border-radius: 37.5px;
+    height: 75px;
+    width: 75px;
+  }
+  
+  .circle:nth-child(5) {
+    background-color: #ea7000;
+    border-radius: 50px;
+    height: 100px;
+    width: 100px;
+  }
+  
+  .label-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .label{
+    font-family: 'Roboto';
+    font-size: 40px;
+    font-weight: 400;
+    color: black;
+    text-align: center;
+    margin: 0 150px;
+  }

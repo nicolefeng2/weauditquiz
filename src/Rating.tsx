@@ -1,6 +1,5 @@
 import "./Rating.css";
 import { useState } from 'react';
-import firebaseTest from './firebase_storage'
 
 interface RatingProps {
   handleRatingClick: (value: number) => void;
@@ -12,8 +11,6 @@ function Rating({ handleRatingClick }: RatingProps){
   const triggerHandleRatingClick = (value: number) => {
     setSelectedRating(value);
     handleRatingClick(value);
-    // Store the rating in Firebase
-    firebaseTest({ rating: value, timestamp: new Date() });
   };
 
   return(

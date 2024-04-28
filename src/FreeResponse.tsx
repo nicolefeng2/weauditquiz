@@ -1,6 +1,5 @@
 import "./FreeResponse.css";
 import { useState } from 'react';
-import firebaseTest from './firebase_storage'
 
 interface FreeResponseProps {
   onSubmit: (value: string) => void;
@@ -8,17 +7,15 @@ interface FreeResponseProps {
 
 function FreeResponse({ onSubmit }: FreeResponseProps){
 
-  const [inputValue, setInputValue] = useState('');
+  const [freeResponse, setFreeResponse] = useState('');
 
   const handleSubmit = (event: any) => {
     event.preventDefault(); // Prevent the default form submission behavior
     // Do something with the submitted value, e.g., send it to an API
-    onSubmit(inputValue); // Pass the inputValue to the parent component
-    // Store the response in firebase storage
-    firebaseTest({ freeResponse: inputValue, timestamp: new Date() });
-
+    onSubmit(freeResponse); // Pass the inputValue to the parent component
     // Clear the input after submission
-    setInputValue('');
+    console.log(freeResponse);
+    setFreeResponse('');
   };
   
   return(
@@ -34,11 +31,10 @@ function FreeResponse({ onSubmit }: FreeResponseProps){
           <input
             className="input-window"
             type="text"
-            value={inputValue}
-            onChange={(e) => setInputValue(e.target.value)}
+            onChange={(e) => setFreeResponse(e.target.value)}
             placeholder="Type your response here..."
           />
-          {/* <button type="submit">Submit</button> */}
+          <button type="submit">Submit</button>
         </form>
       </div>
     </div>

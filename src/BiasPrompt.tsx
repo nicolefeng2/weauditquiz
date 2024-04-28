@@ -13,16 +13,17 @@ import doctor from './assets/prompts/doctor.png';
 import flower from './assets/prompts/flower.png';
 import tree from './assets/prompts/tree.png';
 import wedding from './assets/prompts/wedding.png';
+import firebase_storage from "./firebase_storage";
 
 interface BiasPromptProps {
   prompt: string;
   onSubmit: () => void;
 }
 
-function BiasPrompt({ prompt, onSubmit}: BiasPromptProps) {
+function BiasPrompt({ prompt, onSubmit }: BiasPromptProps) { // onSubmit exclude
     useEffect(() => {
         window.scrollTo(0, 0); // Scroll to the top of the page
-      }, []);
+    }, []);
     
     // picture dictionary
     // EDIT POINT: make sure to add new prompts in here
@@ -51,28 +52,36 @@ function BiasPrompt({ prompt, onSubmit}: BiasPromptProps) {
 
     // Sets the current step on Flower page
     const [step, setStep] = useState('rating');
-    // store rating value
-    // const [setRatingAnswer] = useState<number | null>(null);
-    // store free response value
-    // const [setFreeResponseAnswer] = useState<string>('');
-    // initialize useNavigate
-    const navigate = useNavigate();
+    
+    // store rating and free response answers from Rating.tsx, FreeResponse.tsx
+    const [ratingAnswer, setRatingAnswer] = useState<number>(0);
+    const [freeResponseAnswer, setFreeResponseAnswer] = useState<string>('');
+
+    const navigate = useNavigate(); // initialize useNavigate
+
     // setting the flow from Rating to FreeResponse
     const handleNext = () => {
       if (step === 'rating') {
+        if (ratingAnswer === 0) {
+          // alert user to select a rating before proceeding
+          alert('Please select a rating before proceeding.');
+          return;
+        }
         setStep('freeResponse');
-      } else if (step === 'freeResponse') {
+      }
+      else if (step === 'freeResponse') {
+        // store the rating and free response in firebase
+        firebase_storage({ 'rating-value': ratingAnswer, 'free-response': freeResponseAnswer, 'timestamp': new Date() });
         onSubmit();
         navigate(`/${prompt}-distr`);
       }
     }
 
-    const handleSubmitRating = () => {
-    //   setRatingAnswer(value);
+    const handleSubmitRating = (value: number) => {
+      setRatingAnswer(value);
     }
-
-    const handleSubmitFreeResponse = () => {
-    //   setFreeResponseAnswer(value);
+    const handleSubmitFreeResponse = (value: string) => {
+      setFreeResponseAnswer(value);
     };
 
     return (
@@ -108,14 +117,19 @@ function BiasPrompt({ prompt, onSubmit}: BiasPromptProps) {
 
 
             <div className="submit-container">
-              <button className="submit-box" onClick={handleNext}>
+              { step === 'rating' && (
+                <button className="submit-box" onClick={handleNext}>
                 <div className="submit-text">Submit</div>
                 <img src={whiteArrow} className="arrow" alt="Arrow" />
-              </button>
+                </button> 
+              )}
+              { step === 'freeResponse' && (
+                <button className="submit-box" onClick={handleNext}>
+                <div className="submit-text">Next</div>
+                <img src={whiteArrow} className="arrow" alt="Arrow" />
+                </button> 
+              )} 
             </div>
-
-
-
           </div>
       </div>
     );
